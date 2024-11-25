@@ -1,9 +1,9 @@
 Package: dsMediation
 Title: DataSHIELD Server side Mediation Analysis Functions
 Description: DataSHIELD server side mediation analysis functions.
-Version: 0.0.3
-Author: DataSHIELD Developers <datashield@newcastle.ac.uk>
-Maintainer: DataSHIELD Developers <datashield@newcastle.ac.uk>
+Version: 0.0.4
+Author: Demetris Avraam <demetris.avraam@sund.ku.dk>
+Maintainer: Demetris Avraam <demetris.avraam@sund.ku.dk>
 License: GPL-3
 Depends: 
     R (>= 3.5.0)
@@ -24,5 +24,5 @@ AggregateMethods:
 AssignMethods:
     neImputeDS,
     neWeightDS
-RoxygenNote: 7.2.0
+RoxygenNote: 7.3.2
 Encoding: UTF-8
