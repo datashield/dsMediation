@@ -16,11 +16,11 @@ on the server-side by the \code{ds.neModel} function.}
 a summary table of the object of class c("neLht", "glht") (see glht).
 }
 \description{
-This function is similar to R function \code{neLht} from the 
+This function is similar to R function \code{neLht} from the
 \code{medflex} package.
 }
 \details{
-The function \code{neLhtDS} allows to calculate linear combinations of 
+The function \code{neLhtDS} allows to calculate linear combinations of
 natural effect model parameter estimates.
 }
 \author{

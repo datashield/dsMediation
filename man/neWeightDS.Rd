@@ -14,7 +14,7 @@ a data frame of class c("data.frame", "expData", "weightData") is assigned at
 the server-side of each study.
 }
 \description{
-This function is similar to R function \code{neWeight} from the 
+This function is similar to R function \code{neWeight} from the
 \code{mmedflex} package.
 }
 \details{

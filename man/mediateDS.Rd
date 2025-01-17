@@ -36,10 +36,10 @@ confidence intervals; if 'TRUE' nonparametric bootstrap will be used. Default is
 
 \item{robustSE}{a logical value. If 'TRUE', heteroskedasticity-consistent standard
 errors will be used in quasi-Bayesian simulations. Ignored if 'boot' is 'TRUE' or
-neither 'model.m' nor 'model.y' has a method for vcovHC in the sandwich package. 
+neither 'model.m' nor 'model.y' has a method for vcovHC in the sandwich package.
 Default is 'FALSE'.}
 
-\item{sims}{a number of Monte Carlo draws for nonparametric bootstrap or 
+\item{sims}{a number of Monte Carlo draws for nonparametric bootstrap or
 quasi-Bayesian approximation.}
 
 \item{seed}{a number of a seed random number generator. Default value is NULL.}
@@ -51,12 +51,12 @@ that is stored on the data servers. Default \code{med.out}.}
 a summary table of the object of class 'mediate'.
 }
 \description{
-This function is similar to R function \code{mediate} from the 
+This function is similar to R function \code{mediate} from the
 \code{mediation} package.
 }
 \details{
-The function 'mediate' is used to estimate various quantities for 
-causal mediation analysis, including average causal mediation effects 
+The function 'mediate' is used to estimate various quantities for
+causal mediation analysis, including average causal mediation effects
 (indirect effect), average direct effects, proportions mediated, and total effect.
 }
 \author{

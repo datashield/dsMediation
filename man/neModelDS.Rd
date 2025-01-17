@@ -7,12 +7,12 @@
 neModelDS(formula, family, expData, se, nBoot, newobj)
 }
 \arguments{
-\item{formula}{a formula object providing a symbolic description of the 
+\item{formula}{a formula object providing a symbolic description of the
 natural effect model.}
 
 \item{family}{aa description of the error distribution and link function to be
-used in the model. For glm this can be a character string naming a family 
-function, a family function or the result of a call to a family function. 
+used in the model. For glm this can be a character string naming a family
+function, a family function or the result of a call to a family function.
 For glm.fit only the third option is supported.}
 
 \item{expData}{the expanded dataset (of class "expData").}
@@ -26,13 +26,13 @@ The default type is based on the bootstrap.}
 that is stored on the data servers. Default \code{neModel.out}.}
 }
 \value{
-a list with (i) the summary table of the object of class 'neModel' and 
+a list with (i) the summary table of the object of class 'neModel' and
 (ii) the variance-covariance matrix (if se = "robust").
 }
 \description{
 This function is similar to R function \code{neModel} from the
 
-This function is similar to R function \code{neModel} from the 
+This function is similar to R function \code{neModel} from the
 \code{medflex} package.
 }
 \details{

@@ -23,7 +23,7 @@ in the \code{bda} package. The function computes statistics and p-values for thr
 Sobel mediation test: Sobel test, Aroian test and Goodman test.
 }
 \details{
-To test whether a mediator carries the influence on an independent variable to a 
+To test whether a mediator carries the influence on an independent variable to a
 dependent variable. Missing values will be automatically excluded with a warning.
 }
 \author{

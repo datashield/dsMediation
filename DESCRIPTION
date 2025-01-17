@@ -1,6 +1,6 @@
 Package: dsMediation
-Title: DataSHIELD Server side Mediation Analysis Functions
-Description: DataSHIELD server side mediation analysis functions.
+Title: DataSHIELD server-side package for causal mediation analysis
+Description: The package includes DataSHIELD functions implemented as wrapper functions from selected R packages for mediation analysis including the packages mediation, medflex, and regmedint.
 Version: 0.0.4
 Author: Demetris Avraam <demetris.avraam@sund.ku.dk>
 Maintainer: Demetris Avraam <demetris.avraam@sund.ku.dk>

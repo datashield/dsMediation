@@ -24,7 +24,7 @@ regmedintDS(
 )
 }
 \arguments{
-\item{data}{a string character, the name of the data frame containing the 
+\item{data}{a string character, the name of the data frame containing the
 relevant variables.}
 
 \item{yvar}{a character vector of length 1. Outcome variable name. It should be
@@ -40,7 +40,7 @@ avar is randomized, mvar is not. Thus, there should usually be some confounder(s
 to account for the common cause structure (confounding) between mvar and yvar.}
 
 \item{eventvar}{a character vector of length 1. Only required for survival outcome
-regression models. Note that the coding is 1 for event and 0 for censoring, 
+regression models. Note that the coding is 1 for event and 0 for censoring,
 following the R survival package convention.}
 
 \item{a0}{a numeric vector of length 1. Reference level of treatment variable that
@@ -51,15 +51,15 @@ is considered "untreated" or "unexposed".}
 \item{m_cde}{a numeric vector of length 1. Mediator level at which controlled direct
 effect is evaluated at.}
 
-\item{c_cond}{a numeric vector of the same length as cvar. Covariate vector at which 
+\item{c_cond}{a numeric vector of the same length as cvar. Covariate vector at which
 conditional effects are evaluated at.}
 
 \item{mreg}{a character vector of length 1. Mediator regression type: "linear" or "logistic".}
 
-\item{yreg}{a character vector of length 1. Outcome regression type: "linear", "logistic", 
+\item{yreg}{a character vector of length 1. Outcome regression type: "linear", "logistic",
 "loglinear", "poisson", "negbin", "survCox", "survAFT_exp", or "survAFT_weibull".}
 
-\item{interaction}{a logical vector of length 1. Default to TRUE. Whether to include a 
+\item{interaction}{a logical vector of length 1. Default to TRUE. Whether to include a
 mediator-treatment interaction term in the outcome regression model.}
 
 \item{casecontrol}{a logical vector of length 1. Default to FALSE. Whether data comes from
@@ -75,7 +75,7 @@ the estimates to measure the odds ratio in case of a logistic regression model}
 a summary table of the object of class 'multimed'.
 }
 \description{
-This function is similar to R function \code{regmedint} from the 
+This function is similar to R function \code{regmedint} from the
 \code{regmedint} package.
 }
 \details{

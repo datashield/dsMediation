@@ -22,7 +22,7 @@ multimedDS(
 \item{med.main}{a string character, the name of the mediator of interest. Under
 the parallel design this is the only mediator variable used in the estimation.}
 
-\item{med.alt.transmit}{vector of character strings indicating the names of the 
+\item{med.alt.transmit}{vector of character strings indicating the names of the
 post-treatment confounders, i.e., the alternative mediators affecting both the
 main mediator and outcome.}
 
@@ -31,10 +31,10 @@ main mediator and outcome.}
 \item{covariates.transmit}{vector of character strings representing the names of the
 pre-treatment covariates.}
 
-\item{data}{a string character, the name of data frame containing all the 
+\item{data}{a string character, the name of data frame containing all the
 above variables.}
 
-\item{sims}{a number of bootstrap samples used for the calculation of 
+\item{sims}{a number of bootstrap samples used for the calculation of
 confidence intervals.}
 
 \item{conf.level}{level to be used for confidence intervals.}
@@ -45,7 +45,7 @@ confidence intervals.}
 a summary table of the object of class 'multimed'
 }
 \description{
-This function is similar to R function \code{multimed} from the 
+This function is similar to R function \code{multimed} from the
 \code{mediation} package.
 }
 \details{

@@ -1,6 +1,6 @@
 #'
 #' @title Significance Test for Treatment-Mediator Interaction in Causal Mediation Analysis
-#' @description This function is similar to R function \code{test.TMint} from the 
+#' @description This function is similar to R function \code{test.TMint} from the
 #' \code{mediation} package.
 #' @details The function 'test.TMintDS' is used to test whether the average causal mediation
 #' effects and direct effects are significantly different between the treatment and control
@@ -14,18 +14,16 @@
 #' @author Demetris Avraam, for DataSHIELD Development Team
 #' @export
 #'
-test.TMintDS <- function(x, conf.level){
-  
-  x <- eval(parse(text=x), envir = parent.frame())
+test.TMintDS <- function(x, conf.level) {
+  x <- eval(parse(text = x), envir = parent.frame())
 
-  if(is.null(conf.level)){
+  if (is.null(conf.level)) {
     conf.level <- x$conf.level
   }
-  
+
   test.TMint.out <- mediation::test.TMint(x, conf.level)
-  
+
   return(test.TMint.out)
-  
 }
 # AGGREGATE FUNCTION
 # test.TMintDS

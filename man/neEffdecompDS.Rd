@@ -15,7 +15,7 @@ a summary table of the object of class c("neLht", "glht") (see glht). The object
 additionally inherits from class "neEffdecomp".
 }
 \description{
-This function is similar to R function \code{neEffdecomp} from the 
+This function is similar to R function \code{neEffdecomp} from the
 \code{medflex} package.
 }
 \details{

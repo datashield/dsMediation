@@ -18,7 +18,7 @@ explanations of the contents. The function returns an object of class "htest.ord
 has its own print method included in this package.
 }
 \description{
-This function is similar to R function \code{test.TMint} from the 
+This function is similar to R function \code{test.TMint} from the
 \code{mediation} package.
 }
 \details{
