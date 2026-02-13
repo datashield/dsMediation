@@ -21,10 +21,11 @@
 #' that is stored on the data servers. Default \code{neModel.out}.
 #' @return a list with (i) the summary table of the object of class 'neModel' and
 #' (ii) the variance-covariance matrix (if se = "robust").
-#' @author Demetris Avraam, for DataSHIELD Development Team
+#' @author Demetris Avraam
 #' @export
 #'
 neModelDS <- function(formula, family, expData, se, nBoot, newobj) {
+  
   # get the value of the 'expData' provided as character on the client side
   expData <- eval(parse(text = expData), envir = parent.frame())
 
@@ -35,9 +36,7 @@ neModelDS <- function(formula, family, expData, se, nBoot, newobj) {
     nBoot = nBoot, parallel = "no", ncpus = 1, progress = FALSE
   )
 
-  if (se == "robust") {
-    out <- list(summary(neModel.out), neModel.out$vcov)
-  }
+  out <- summary(neModel.out)
 
   # save the outcome on the server-side
   base::assign(newobj, neModel.out, envir = parent.frame())

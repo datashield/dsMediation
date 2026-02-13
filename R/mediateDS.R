@@ -25,28 +25,24 @@
 #' @param newobj a character string that provides the name for the output object
 #' that is stored on the data servers. Default \code{med.out}.
 #' @return a summary table of the object of class 'mediate'.
-#' @author Demetris Avraam, for DataSHIELD Development Team
+#' @author Demetris Avraam
 #' @export
 #'
-mediateDS <- function(model.m, model.y, treat, mediator, boot, conf.level, robustSE, sims, seed, newobj) {
-  model.m <- eval(parse(text = model.m), envir = parent.frame())
-  model.y <- eval(parse(text = model.y), envir = parent.frame())
-
+mediateDS <- function(model.m=model.m, model.y=model.y, sims=sims, boot=boot, 
+                      treat=treat, mediator=mediator, conf.level=conf.level, 
+                      robustSE=robustSE, seed=seed, newobj=newobj){
+  
+  model.m <- get(x = model.m, envir = parent.frame())
+  model.y <- get(x = model.y, envir = parent.frame())
+  
   if (!is.null(seed)) {
     set.seed(seed)
   }
 
-  # med.out <- mediation::mediate(model.m, model.y, sims = sims, boot = boot, boot.ci.type = "perc",
-  #   treat = treat, mediator = mediator, covariates = NULL,
-  #   outcome = NULL, control = NULL, conf.level = 0.95, control.value = 0,
-  #   treat.value = 1, long = TRUE, dropobs = FALSE, robustSE = robustSE,
-  #   cluster = NULL, group.out = NULL, use_speed = FALSE)
-
-  med.out <- mediation::mediate(model.m, model.y,
-    sims = sims, boot = boot,
-    treat = treat, mediator = mediator, conf.level = conf.level,
-    robustSE = robustSE
-  )
+  med.out <- mediation::mediate(model.m = model.m, model.y = model.y,
+                                sims = sims, boot = boot, treat = treat, 
+                                mediator = mediator, conf.level = conf.level, 
+                                long = FALSE, robustSE = robustSE)
 
   out <- summary(med.out)
 
