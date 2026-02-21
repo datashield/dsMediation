@@ -27,7 +27,7 @@
 neModelDS <- function(formula, family, expData, se, nBoot, newobj) {
   
   # get the value of the 'expData' provided as character on the client side
-  expData <- eval(parse(text = expData), envir = parent.frame())
+  expData <- get(x = expData, envir = parent.frame())
 
   formula <- stats::as.formula(formula)
 
